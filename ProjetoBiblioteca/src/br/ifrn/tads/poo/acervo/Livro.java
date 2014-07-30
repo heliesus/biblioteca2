@@ -11,12 +11,6 @@ public class Livro extends ItemAcervo {
 	private String isbn;
 	private Integer edicao;
 	private int quantidade;
-
-	
-	
-	
-	
-	
 	
 //--------------------------------gets e sets -------------------------------------------//
 	

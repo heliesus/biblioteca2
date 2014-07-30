@@ -13,27 +13,26 @@ public class Usuario {
 		this.codUsurio = codUsuario;
 		this.cpf = cpf;
 		this.endereco = endereco;
-		this.nome = nome;
+		//this.nome = nome;
 	}
-
-	public void pagar(){
-
+//------------ verificar se o cpf e valido ----------------------------------------------//
+	
+	public class Pessoa{
+		private String nome, cpf;
+		public Pessoa(String nome, String cpf) throws Exception{
+			if(cpf.length() != 11)
+				throw new Exception("cpf deve conter 11 digitos");
+			for(int i = 0; i < cpf.length(); i++){
+				char c = cpf.charAt(i);
+				if(!Character.isDigit(c))
+					throw new Exception("cpf deve conter só digitos");
+				this.cpf = cpf;
+				this.nome = nome;
+			}
+		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	//-----------------------gets e sets ---------------------------------------------//
+	
+//-----------------------gets e sets ---------------------------------------------//
 
 	public int getCodUsurio() {
 		return codUsurio;
