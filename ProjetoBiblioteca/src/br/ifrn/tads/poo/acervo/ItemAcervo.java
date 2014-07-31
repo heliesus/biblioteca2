@@ -8,15 +8,16 @@ public abstract class ItemAcervo {
 	private int codigoItem;
 	private boolean pago;
 	
-//--------------------------------contrutores------------------------------------------------//
+//--------------------------------contrutores----------------------------------------//
 	
 	public ItemAcervo(double custo, int codigoItem, boolean pago){
 		this.codigoItem = codigoItem;
 		this.custo = custo;
 		this.pago = pago;
 	}
+
+//------------------------maximo e minimo de livros que pode pegar ------------------//
 	
-//------------------------maximo e minimo de livros que pode pegar -------------------------//
 	public int getContaMaxima(){
 		return 2;
 	}
@@ -29,6 +30,7 @@ public abstract class ItemAcervo {
 	public double devolver(){
 		return getContaMaxima();
 	}
+	
 //-------------------------------gets e sets ------------------------------------------------//
 	
 	public double getCusto() {

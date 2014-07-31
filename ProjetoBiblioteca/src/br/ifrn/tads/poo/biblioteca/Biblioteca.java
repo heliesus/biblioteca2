@@ -1,6 +1,7 @@
 package br.ifrn.tads.poo.biblioteca;
 
 public class Biblioteca {
+	
 	private String nomedaBiblioteca;
 	
 	public String getNomedaBiblioteca() {
