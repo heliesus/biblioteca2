@@ -9,11 +9,12 @@ public class Usuario {
 	//-------------------------- construtores ------------------//
 
 	public Usuario(int codUsuario, String nome, String endereco, String cpf)throws Exception {
-
 		this.codUsurio = codUsuario;
 		this.endereco = endereco;
 		this.nome = nome;
-		if(cpf.length() != 11)     //--------------------------------- vai verificar se o cpf e valido 
+		
+	//--------------------------------- vai verificar se o cpf e valido------//
+		if(cpf.length() != 11)      
 			throw new Exception("cpf deve conter 11 digitos");
 		for(int i = 0; i < cpf.length(); i++){
 			char c = cpf.charAt(i);
@@ -23,7 +24,7 @@ public class Usuario {
 			this.nome = nome;
 		}
 	}
-	
+
 //-----------------------gets e sets ---------------------------------------------//
 
 	public int getCodUsurio() {

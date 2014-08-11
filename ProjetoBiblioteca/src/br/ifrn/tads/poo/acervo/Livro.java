@@ -1,7 +1,7 @@
 package br.ifrn.tads.poo.acervo;
 
 public class Livro extends ItemAcervo {
-	
+
 	public Livro(double custo, int codigoItem, boolean pago) {
 		super(custo, codigoItem, pago);
 		// TODO Auto-generated constructor stub
